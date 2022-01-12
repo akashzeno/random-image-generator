@@ -1,0 +1,21 @@
+.mainContainer {
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+	border: 2px solid black;
+}
+
+.mainContainer__imgGenBtn {
+	margin-bottom: 1rem;
+}
+
+.mainContainer__imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.mainContainer__imgContainer > *{
+    margin-bottom: 1rem;
+}
