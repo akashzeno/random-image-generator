@@ -1,7 +1,15 @@
-document.querySelector(".mainContainer__imgGenBtn").addEventListener("click",()=>{
-
-    randomImgList += `<img src="https://random.imagecdn.app/300/150">`;
-    document.querySelector(".mainContainer__imgContainer").innerHTML = randomImgList;
-});
-
 let randomImgList = "";
+const imageURL = "https://random.imagecdn.app/300/150";
+const imageContainer = document.querySelector(".mainContainer__imgContainer");
+
+
+async function getImage() {
+    const response = await fetch(imageURL);
+    const img = document.createElement("img");
+    img.src = response.url;
+    imageContainer.appendChild(img);
+}
+
+document.querySelector(".mainContainer__imgGenBtn").addEventListener("click",()=>{
+    getImage();
+});

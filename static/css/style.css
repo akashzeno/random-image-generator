@@ -1,15 +1,61 @@
 .mainContainer {
+    font: 700 30px/120px "Quicksand", sans-serif;
     width: 75vw;
-    margin: 0 auto;
     text-align: center;
-	border: 2px solid black;
+    border-radius: 36px;
+    border: 4px solid #EA4C89;
+    margin: 40px auto;
+    color: #EA4C89;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer__title {
+    margin: 0;
+}
+
+.button-1 {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover {
+    transform: translateY(-1px);
+    background-color: #F082AC;
+}
+
+.button-1:active {
+    transform: translateY(0);
 }
 
 .mainContainer__imgGenBtn {
 	margin-bottom: 1rem;
 }
-
 .mainContainer__imgContainer {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
